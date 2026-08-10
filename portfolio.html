@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio-Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio-accueil.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg p-0" id="headFoot">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/Mon logo.png" alt="Mon logo" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="portfolio.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio-projet.html">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio-competences.html">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio-contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="p-5" id="mainColor">
+        <section class="container border-none rounded text-light shadow px-5 pt-5" id="dColor">
+            <div class="row">
+                <div class="col-md-6">
+                    <span id="nom">Salut, je suis Vicky</span>
+                    <h4>Developpeuse web Frontend</h4>
+                    <p>Je suis une jeune passionée du developpement avec un grand intérêt pour le developpement frontend. J'aime construire des interfaces web agréable à lire et explorer les nouvelles technologies. Actuellement en formation, avec une pratique régulière sur des projets concrets.</p>
+                    <div class="container gy-2">
+                        <button class="btn btn-outline-light" type="button" id="proBtn">Voir mes projets</button>
+                        <button class="btn btn-outline-light" type="button" id="conBtn">Me contacter</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="w-50 mx-auto">
+                        <img class="img-fluid" id="img" src="../Images/Ma photo pro 1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="m-3" id="nom">Ce que je fais</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <ul class="list-group">
+                            <li class="list-group-item border-2 d-flex" id="titre"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-slash me-1" viewBox="0 0 16 16">
+  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+</svg><h4>Frontend</h4></li>
+                            <li class="list-group-item border-2" id="groupB">Interfaces claires et responsives avec Bootstrap.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <ul class="list-group">
+                            <li class="list-group-item border-2 d-flex" id="titre"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-binoculars me-1" viewBox="0 0 16 16">
+  <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+</svg><h4>Exploration</h4></li>
+                            <li class="list-group-item border-2" id="groupB">Python, machine learning et autres langages en autodidacte.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <ul class="list-group">
+                            <li class="list-group-item border-2 d-flex" id="titre"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-highlighter me-1" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065zM5.293 13.5 2.5 10.707v1.586L3.707 13.5z"/>
+</svg><h4>Infographie</h4></li>
+                            <li class="list-group-item border-2" id="groupB">Conception graphique avec de nombreux logiciels à l'appui.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid text-center lead" id="headFoot">&copy; 2026 NDONGO OHANDA Cyrielle Vicky</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("proBtn").addEventListener('click', ()=>{
+            window.location.href = "/My-Portfolio/portfolio-projet.html";
+        });
+        document.getElementById("conBtn").addEventListener('click', ()=>{
+            window.location.href = "/My-Portfolio/portfolio-contact.html";
+        });
+    </script>
+</body>
+</html>
