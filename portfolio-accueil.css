@@ -18,7 +18,7 @@
 }
 #dColor{
     background: var(--violet_ink);
-    button{
+    a{
         background: var(--electric_indigo);
     }
 }
