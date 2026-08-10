@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: "Titan One";
-    src: url(../Assets/TitanOne-Regular.ttf);
+    src: url(TitanOne-Regular.ttf);
 }
 #headFoot{
     background: var(--electric_indigo);
@@ -46,7 +46,4 @@
 }
 .tool{
     font-size: 2rem;
-}
-hr{
-    color: #e8733a;
 }
