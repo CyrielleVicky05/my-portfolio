@@ -23,9 +23,9 @@
     }
 }
 #img{
-    border-radius: 50%;
+    border-radius: 100%;
     width: 300px;
-    height: 300px;
+    height: 220px;
 }
 #nom,#titre{
     font-family: "Titan One";
@@ -43,6 +43,9 @@
 .skill{
     color: #2d1b69;
     font-family: 'Titan One';
+}
+.tools{
+    font-size: 1.5rem;
 }
 .tool{
     font-size: 2rem;
