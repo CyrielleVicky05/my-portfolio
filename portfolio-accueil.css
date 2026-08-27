@@ -22,6 +22,9 @@
         background: var(--electric_indigo);
     }
 }
+#lColor a{
+    background: var(--electric_indigo);
+}
 #img{
     border-radius: 100%;
     width: 300px;
