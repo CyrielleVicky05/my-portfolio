@@ -9,6 +9,52 @@
     font-family: "Titan One";
     src: url(TitanOne-Regular.ttf);
 }
+@view-transition{
+    navigation: auto;
+}
+::view-transition-group(page-content){
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+::view-transition-old(page-content){
+    animation-name: slide-out;
+}
+::view-transition-new(page-content){
+    animation-name: slide-in;
+}
+@keyframes slide-out {
+    to{
+        translate: -100vw;
+    }
+}
+@keyframes slide-in {
+    from{
+        translate: 100vw;
+    }
+}
+#pro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--violet_ink);
+    height: 3px;
+    z-index: 9999;
+    transform-origin: 0 50%;
+    animation: growProgress 2s linear;
+    animation-timeline: scroll();
+}
+@keyframes growProgress {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+main{
+    view-transition-name: page-content;
+}
 #headFoot{
     background: var(--electric_indigo);
     color: var(--vanilla_glow);
@@ -34,7 +80,27 @@
     font-family: "Titan One";
     font-size: 2.5rem;
     color: var(--violet_voltage);
+    animation: headingMask linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
     /* text-shadow: 3px 3px 6px var(--electric_indigo); */
+}
+@keyframes headingMask {
+    0%{
+        opacity: 0;
+        transform: translateY(90px) scale(.75);
+        letter-spacing: 10px;
+        filter: blur(5px);
+    }
+    65%{
+        transform: translateY(-8px) scale(1.03);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        letter-spacing: 0;
+        filter: blur(0);
+    }
 }
 #titre{
     background: var(--violet_ink);
@@ -52,4 +118,50 @@
 }
 .tool{
     font-size: 2rem;
+}
+.card{
+    animation: reveal linear both;
+    animation-timeline: view();
+}
+.card:nth-child(1){
+    animation-range: entry 0% cover 20%;
+}
+.card:nth-child(2){
+    animation-range: entry 10% cover 30%;
+}
+.card:nth-child(3){
+    animation-range: entry 20% cover 40%;
+}
+.card:nth-child(4){
+    animation-range: entry 30% cover 50%;
+}
+.card:nth-child(5){
+    animation-range: entry 40% cover 60%;
+}
+.card:nth-child(6){
+    animation-range: entry 50% cover 70%;
+}
+.card:nth-child(7){
+    animation-range: entry 60% cover 80%;
+}
+.card:nth-child(8){
+    animation-range: entry 70% cover 90%;
+}
+.card:nth-child(9){
+    animation-range: entry 80% cover 100%;
+}
+@keyframes reveal {
+    from{
+        opacity: 0;
+        transform: perspective(1600px) rotateY(35deg) rotateY(25deg) translateY(150px) scale(.55);
+        filter: blur(10px);
+    }
+    60%{
+        transform: perspective(1600px) rotateY(-5deg) scale(1.05);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(1600px) rotateY(0) rotateX(0) translateY(0) scale(1);
+        filter: blur(0);
+    }
 }
